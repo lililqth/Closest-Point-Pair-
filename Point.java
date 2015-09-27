@@ -1,4 +1,4 @@
-package test;
+package Cloest_Point_Pair;
 
 public class Point {
 	double x;

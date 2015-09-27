@@ -1,4 +1,4 @@
-package test;
+package Cloest_Point_Pair;
 
 import java.math.BigInteger;
 import java.util.Collections;

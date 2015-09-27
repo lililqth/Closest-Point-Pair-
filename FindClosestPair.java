@@ -1,4 +1,4 @@
-package test;
+package Cloest_Point_Pair;
 
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
@@ -123,6 +123,7 @@ public class FindClosestPair {
 					double PointY = random.nextDouble()*2000;
 					FindClosestPair.pointList.add(new Point(PointX, PointY));
 				}
+				JOptionPane.showMessageDialog(null, "撒点完毕","", JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
 		JButton jbt3 = new JButton("nlogn复杂度算法");

@@ -1,4 +1,4 @@
-package test;
+package Cloest_Point_Pair;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
