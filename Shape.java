@@ -34,7 +34,7 @@ public class Shape {
 		g.setColor(this.color);
 		if(kind == 0)
 		{
-			g.drawOval(this.x, this.y, 10, 10);
+			g.drawOval(this.x, this.y, 5, 5);
 		}
 		if (kind == 1)
 		{

@@ -28,7 +28,7 @@ public class FindClosestPair {
 	private JFrame frame;
 	public static ArrayList<Point> pointList = new ArrayList<Point>(); //点列表
 	public static PointPair ans = null;	//求解出的最近点对
-	public static boolean randomFlag = false;	//求解出的最近点对
+	public static boolean randomFlag = false;
 	static Point closestPairA = null; 
 	static Point closestPairB = null;
 	/**
@@ -117,10 +117,10 @@ public class FindClosestPair {
 				FindClosestPair.randomFlag = true;
 				FindClosestPair.pointList.clear();
 				Random random = new Random(1000);
-				for (int i=0;i<100000; i++)
+				for (int i=0;i<1000000; i++)
 				{
-					double PointX = random.nextDouble()*2000;
-					double PointY = random.nextDouble()*2000;
+					double PointX = random.nextDouble()*20000;
+					double PointY = random.nextDouble()*20000;
 					FindClosestPair.pointList.add(new Point(PointX, PointY));
 				}
 				JOptionPane.showMessageDialog(null, "撒点完毕","", JOptionPane.INFORMATION_MESSAGE);
@@ -142,7 +142,6 @@ public class FindClosestPair {
 		
 		// 业务逻辑
 		pointList.clear();
-		
 	}
 }
 
@@ -199,9 +198,9 @@ class Mouse extends MouseAdapter {
 		    ArcsPanel p = (ArcsPanel) arg0.getSource();
 			Graphics2D g = (Graphics2D)p.getGraphics();
 			BasicStroke bs=new BasicStroke(3);//width是线宽,float型
-			g.setStroke(bs);	
+			g.setStroke(bs);
 			g.setColor(Color.BLACK);
-			g.drawOval(startX, startY, 10, 10);
+			g.drawOval(startX, startY, 5, 5);
 			ArcsPanel.graphList.add(new Shape(0, startX, startY, Color.BLACK, bs));
 			//FindClosestPair.pointList.add(new Point(startX, startY));
 		}

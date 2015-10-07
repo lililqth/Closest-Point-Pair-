@@ -46,7 +46,7 @@ public class NlognFind {
 					new Point(0, 0),new Point(0, 0));
 		}
 		/*首先在问题规模小于一定值的时候直接计算*/
-		if (n < 4)
+		if (n < 50)
 		{
 			for (int i = 0; i < n; i++) {
 				for (int j = i+1; j < n; j++) {

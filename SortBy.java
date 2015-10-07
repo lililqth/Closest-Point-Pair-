@@ -10,7 +10,7 @@ class SortByX implements Comparator {
 		if (s1.x > s2.x) {
 			return 1;
 		}
-		return 0;
+		return -1;
 	}
 }
 class SortByY implements Comparator {
@@ -20,6 +20,6 @@ class SortByY implements Comparator {
 		if (s1.y > s2.y) {
 			return 1;
 		}
-		return 0;
+		return -1;
 	}
 }
